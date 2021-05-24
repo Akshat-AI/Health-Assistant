@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>
+    My Personal Health Assistant
+</title>        
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+<body>
+
+	<div class="bgimage">
+		<div class="menu">
+			
+			<div class="leftmenu">
+				<h4>My Personal Health Assistant </h4>
+			</div>
+
+			<div class="rightmenu">
+				<ul>
+					<li id="fisrtlist"> HOME </li>
+					
+				</ul>
+			</div>
+
+		</div>
+
+          <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> 
+          <h1 style="color:white"> Welcome To Your Personal Health Assistant!!! </h1>
+          <br> <br>
+          <h2 style="color:white"> Try it out at the bottom right chat button now </h2>  
+
+
+
+	</div>
+
+
+
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "5fdc98f0-5534-4ced-9190-beee6e7abe8d", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "1db37679-230a-4355-adfe-cc0243e1145d", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
